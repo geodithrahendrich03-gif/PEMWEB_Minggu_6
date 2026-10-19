@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login - Ruang Baca</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid px-md-4">
+      <a class="navbar-brand fw-semibold" href="#"><i class="bi bi-book-half me-2"></i>Ruang Baca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Bantuan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login -->
+  <main class="container-fluid">
+    <div class="row" style="min-height: calc(100vh - 56px)">
+
+      <div class="col-lg-6 d-none d-lg-flex flex-column justify-content-between text-white p-5" style="background: linear-gradient(160deg, #1e293b, #0f172a)">
+        <div class="fs-4 fw-semibold"><i class="bi bi-hexagon-half me-2"></i>Ruang Baca</div>
+        <blockquote class="mb-5">
+          <p class="fs-5">Perpustakaan digital untuk menemukan bacaan favoritmu, kapan saja dan di mana saja.</p>
+          <footer class="text-white-50 small">— Tim Ruang Baca</footer>
+        </blockquote>
+        <span class="small text-white-50">&copy; 2026 Ruang Baca</span>
+      </div>
+
+      <div class="col-lg-6 d-flex align-items-center justify-content-center p-4 bg-body-tertiary">
+        <form class="w-100" style="max-width: 360px" action="#" method="post">
+          <h1 class="fs-4 fw-semibold mb-1">Masuk ke Ruang Baca</h1>
+          <p class="text-body-secondary small mb-4">Temukan bacaan untuk hari ini.</p>
+
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username" autocomplete="username" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan password" autocomplete="current-password" required>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="ingat">
+            <label class="form-check-label small" for="ingat">Ingat saya</label>
+          </div>
+
+          <button class="btn btn-primary w-100 mb-3" type="submit">Masuk</button>
+
+          <p class="small text-center mb-0">
+            <a href="#" class="text-decoration-none">Lupa password?</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
